@@ -4,6 +4,7 @@ namespace KlausKinski;
 
 use KlausKinski\Config\RouterDelegatorFactory;
 use KlausKinski\Intent\AbstractIntentFactory;
+use KlausKinski\Intent\AbuseIntent;
 use KlausKinski\Intent\QuoteIntent;
 use KlausKinski\TextHelper\KlausKinskiTextHelper;
 use Phlexa\Application\AlexaApplication;
@@ -75,15 +76,17 @@ class ConfigProvider
                 'sessionDefaults'      => [
                     'count' => 0,
                 ],
-                'smallImageUrl'        => APPLICATION_BASE_URL . '/images/klaus-kisnki_480x480.png',
+                'smallImageUrl'        => APPLICATION_BASE_URL . '/images/klaus-kinski_480x480.png',
                 'largeImageUrl'        => APPLICATION_BASE_URL . '/images/klaus-kisnki_800x800.png',
                 'backgroundImageUrl'   => APPLICATION_BASE_URL . '/images/klaus-kisnki_1024x600.png',
                 'backgroundImageTitle' => 'Klaus Kinski Alexa Skill',
                 'intents'              => [
                     'aliases' => [
+                        AbuseIntent::NAME => AbuseIntent::class,
                         QuoteIntent::NAME => QuoteIntent::class,
                     ],
                     'factories' => [
+                        AbuseIntent::class => AbstractIntentFactory::class,
                         QuoteIntent::class => AbstractIntentFactory::class,
                     ],
                 ],

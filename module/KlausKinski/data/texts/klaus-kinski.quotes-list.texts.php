@@ -2,6 +2,14 @@
 
 return [
     'de-DE' => [
+        'abuses' => [
+            '%s, du Arschloch!',
+            '%s, du dumme Sau!',
+            '%s, so ein Geisteskranker!',
+            '%s, der muss ins Irrenhaus',
+            '%s, ein wahnsinniger',
+            '%s, der ist verrückt dieser Idiot',
+        ],
         'quotes'  => [
             'Du Arschloch!',
             'Du dumme Sau!',
