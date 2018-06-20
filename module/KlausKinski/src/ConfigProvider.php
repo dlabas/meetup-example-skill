@@ -3,9 +3,10 @@
 namespace KlausKinski;
 
 use KlausKinski\Config\RouterDelegatorFactory;
+use KlausKinski\Intent\AbstractIntentFactory;
+use KlausKinski\Intent\QuoteIntent;
 use KlausKinski\TextHelper\KlausKinskiTextHelper;
 use Phlexa\Application\AlexaApplication;
-use PhlexaExpressive\Intent\AbstractIntentFactory;
 use PhlexaExpressive\TextHelper\TextHelperFactory;
 use Zend\Expressive\Application;
 
@@ -80,9 +81,10 @@ class ConfigProvider
                 'backgroundImageTitle' => 'Klaus Kinski Alexa Skill',
                 'intents'              => [
                     'aliases' => [
+                        QuoteIntent::NAME => QuoteIntent::class,
                     ],
-
                     'factories' => [
+                        QuoteIntent::class => AbstractIntentFactory::class,
                     ],
                 ],
                 'texts'                => [
