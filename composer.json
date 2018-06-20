@@ -43,7 +43,8 @@
   "autoload": {
     "psr-4": {
       "Application\\": "module/Application/src/",
-      "Hello\\": "module/Hello/src/"
+      "Hello\\": "module/Hello/src/",
+      "KlausKinski\\": "module/KlausKinski/src"
     }
   },
   "autoload-dev": {

@@ -36,6 +36,7 @@ $aggregator = new ConfigAggregator(
         PhlexaExpressive\ConfigProvider::class,
 
         Hello\ConfigProvider::class,
+        KlausKinski\ConfigProvider::class,
         Application\ConfigProvider::class,
 
         new ArrayProvider($cacheConfig),
