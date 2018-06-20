@@ -84,9 +84,9 @@ class ConfigProvider
                 'sessionDefaults'      => [
                     'count' => 0,
                 ],
-                'smallImageUrl'        => 'https://www.phoice.tech/cards/hello-480x480.png',
-                'largeImageUrl'        => 'https://www.phoice.tech/cards/hello-800x800.png',
-                'backgroundImageUrl'   => 'https://www.phoice.tech/cards/hello-1024x600.png',
+                'smallImageUrl'        => APPLICATION_BASE_URL . '/cards/hello-480x480.png',
+                'largeImageUrl'        => APPLICATION_BASE_URL . '/cards/hello-800x800.png',
+                'backgroundImageUrl'   => APPLICATION_BASE_URL . '/cards/hello-1024x600.png',
                 'backgroundImageTitle' => 'Hello World Alexa Skill',
                 'intents'              => [
                     'aliases' => [

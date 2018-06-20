@@ -16,6 +16,7 @@ use Zend\Expressive\Application;
 
 define('PROJECT_ROOT', dirname(__DIR__) . '');
 define('APPLICATION_ENV', getenv('APPLICATION_ENV') ?: 'production');
+define('APPLICATION_BASE_URL', getenv('APPLICATION_BASE_URL') ?: '');
 
 chdir(dirname(__DIR__));
 require PROJECT_ROOT . '/vendor/autoload.php';
